@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n="page_students_title">Cleverdi — Студенту</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="index.html">
+          <img src="assets/img/logo.svg" alt="Cleverdi"/>
+          <span>Cleverdi</span>
+        </a>
+
+        <nav class="navlinks" aria-label="Main navigation">
+          <a href="index.html" data-i18n="nav_home"></a>
+          <a href="courses.html" data-i18n="nav_courses"></a>
+          <a href="materials.html" data-i18n="nav_materials"></a>
+          <a href="schedule.html" data-i18n="nav_schedule"></a>
+          <a href="certificates.html" data-i18n="nav_certs"></a>
+          <a href="students-info.html" data-i18n="nav_students_info"></a>
+          <a href="contacts.html" data-i18n="nav_contacts"></a>
+        </nav>
+
+        <div class="actions">
+          <div class="lang" role="group" aria-label="Language switcher">
+            <button type="button" data-lang="ru">RU</button>
+            <button type="button" data-lang="kg">KG</button>
+          </div>
+          <button class="burger" type="button" data-burger aria-label="Menu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M4 7h16M4 12h16M4 17h16" stroke="#101828" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobilemenu" data-mobilemenu>
+        <a href="index.html" data-i18n="nav_home"></a>
+        <a href="courses.html" data-i18n="nav_courses"></a>
+        <a href="materials.html" data-i18n="nav_materials"></a>
+        <a href="schedule.html" data-i18n="nav_schedule"></a>
+        <a href="certificates.html" data-i18n="nav_certs"></a>
+        <a href="students-info.html" data-i18n="nav_students_info"></a>
+        <a href="contacts.html" data-i18n="nav_contacts"></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container section">
+    <div class="hero-card" style="padding: 26px 22px;">
+      <div class="kicker" data-i18n="students_kicker"></div>
+      <h1 class="h2" style="margin:10px 0 8px;" data-i18n="students_h1"></h1>
+      <p class="muted" style="margin:0 0 14px; max-width: 74ch;" data-i18n="students_lead"></p>
+
+      <div class="card" style="padding: 14px;">
+        <form id="studentForm" class="form-grid">
+          <div class="form-field">
+            <label class="label" for="sid" data-i18n="students_id_label"></label>
+            <input class="input" id="sid" name="sid" autocomplete="off" placeholder="например: CLV-1021" required />
+          </div>
+          <div class="form-field">
+            <label class="label" for="scode" data-i18n="students_code_label"></label>
+            <input class="input" id="scode" name="scode" autocomplete="off" placeholder="например: 4521" required />
+          </div>
+          <div class="form-field" style="align-self:end;">
+            <button class="btn primary" type="submit" data-i18n="students_find_btn"></button>
+          </div>
+        </form>
+
+        <div class="notice" style="margin-top:12px;" data-i18n="students_note"></div>
+      </div>
+
+      <div id="studentResult" style="margin-top:14px;"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand">
+          <span class="logo-dot"></span>
+          <span class="brand-name">Cleverdi Academy</span>
+        </div>
+        <div class="muted" style="margin-top:8px;" data-i18n="footer_copy"></div>
+      </div>
+      <div class="muted footer-right" data-i18n="footer_right"></div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/nav-active.js"></script>
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/students.js"></script>
+</body>
+</html>

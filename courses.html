@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="description" content="Cleverdi Academy — учебный центр: английский, искусственный интеллект, личностное развитие."/>
+  <title>Cleverdi Academy</title>
+  <link rel="stylesheet" href="assets/css/styles.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="index.html">
+          <img src="assets/img/logo.svg" alt="Cleverdi"/>
+          <span>Cleverdi</span>
+        </a>
+
+        <nav class="navlinks" aria-label="Main navigation">
+          <a href="index.html" data-i18n="nav_home"></a>
+          <a href="courses.html" data-i18n="nav_courses"></a>
+          <a href="materials.html" data-i18n="nav_materials"></a>
+          <a href="schedule.html" data-i18n="nav_schedule"></a>
+          <a href="certificates.html" data-i18n="nav_certs"></a>
+          <a href="students-info.html" data-i18n="nav_students_info"></a>
+          <a href="contacts.html" data-i18n="nav_contacts"></a>
+        </nav>
+
+        <div class="actions">
+          <div class="lang" role="group" aria-label="Language switcher">
+            <button type="button" data-lang="ru">RU</button>
+            <button type="button" data-lang="kg">KG</button>
+          </div>
+          <button class="burger" type="button" data-burger aria-label="Menu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M4 7h16M4 12h16M4 17h16" stroke="#101828" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobilemenu" data-mobilemenu>
+        <a href="index.html" data-i18n="nav_home"></a>
+        <a href="courses.html" data-i18n="nav_courses"></a>
+        <a href="materials.html" data-i18n="nav_materials"></a>
+        <a href="schedule.html" data-i18n="nav_schedule"></a>
+        <a href="certificates.html" data-i18n="nav_certs"></a>
+        <a href="students-info.html" data-i18n="nav_students_info"></a>
+        <a href="contacts.html" data-i18n="nav_contacts"></a>
+      </div>
+    </div>
+  </header>
+
+  
+<main class="section">
+  
+    <section class="page-hero">
+      <h1>Каталог курсов</h1>
+      <p>Выберите направление и откройте страницу курса, где будут материалы и запись.</p>
+    </section>
+<div class="container">
+    <div class="section-title">
+      <div>
+        <h2 data-i18n="page_title_courses"></h2>
+        <p data-i18n="sec_courses_p"></p>
+      </div>
+</div>
+
+    <div class="grid-3">
+      <article class="card course">
+        <div class="tag" data-i18n="course_tag_lang"></div>
+        <h3 data-i18n="course_en_title"></h3>
+        <p data-i18n="course_en_desc"></p>
+        <div class="cta">
+          <a class="btn" href="course-english.html">Подробнее</a>
+</div>
+      </article>
+
+      <article class="card course">
+        <div class="tag" data-i18n="course_tag_ai"></div>
+        <h3 data-i18n="course_ai_title"></h3>
+        <p data-i18n="course_ai_desc"></p>
+        <div class="cta">
+          <a class="btn" href="course-ai.html">Подробнее</a>
+</div>
+      </article>
+
+      <article class="card course">
+        <div class="tag" data-i18n="course_tag_growth"></div>
+        <h3 data-i18n="course_gr_title"></h3>
+        <p data-i18n="course_gr_desc"></p>
+        <div class="cta">
+          <a class="btn" href="course-growth.html">Подробнее</a>
+</div>
+      </article>
+    </div>
+
+    <div class="notice" style="margin-top:16px">
+      Добавление новых курсов: создайте копию страницы курса (template ниже) и добавьте карточку в courses.html.
+    </div>
+  </div>
+</main>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand" style="gap:10px">
+            <img src="assets/img/logo.svg" alt="Cleverdi"/>
+            <span>Cleverdi Academy</span>
+          </div>
+          <p class="smallprint" style="margin:10px 0 0" data-i18n="footer_copy"></p>
+          <p class="smallprint" style="margin:8px 0 0">WhatsApp/Telegram: <a href="#" title="Replace link">+996 XXX XXX XXX</a> • Instagram: <a href="#" title="Replace link">@cleverdi</a></p>
+        </div>
+        <div class="smallprint" style="text-align:right" data-i18n="footer_right"></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/nav-active.js"></script>
+</body>
+</html>
